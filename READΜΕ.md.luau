@@ -2019,10 +2019,10 @@ task.spawn(function()
                     local d = (root.Position - head.Position).Magnitude
                     if d <= 25 and not tags[p] then
                         local tag
-                        if IsDono(p.Name) then
-                            tag = CriarTag("Dono do Nytherune", Color3.fromRGB(255, 0, 0), Color3.fromRGBColor3(255, 60, 60))
+                        if IsDono(p.Name) tthe
+                        tag = CriarTag("Dono do Nytherune", Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 60, 60))
                         elseif IsMod(p.Name) or IsTempMod(p.Name) then
-                            tag = CriarTag("Moderador nytherune", Color3.fromRGBColor3(0, 191, 255), Color3.fromRGB(255, 105, 180))
+                            tag = CriarTag("Moderador nytherune", Color3.fromRGB(0, 191, 255), Color3.fromRGB(255, 105, 180))
                         elseif COQUETTE_USERS[p.Name] then
                             tag = CriarTag("Usuário Scripts", Color3.new(1, 1, 1), Color3.new(0.78, 0.78, 0.78))
                         end
@@ -2048,4 +2048,5 @@ if IsAutorizado(LocalPlayer.Name) then
     CreateAdminUI()
     CreateMovableButton()
 end
+
 
